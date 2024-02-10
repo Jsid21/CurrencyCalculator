@@ -1,0 +1,146 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+}
+body{
+    background-color: #dcd7d7;
+    height: 100vh;
+    align-self: center;
+}
+h1{
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    text-justify: auto;
+    padding: 1rem;
+}
+.content{
+    background-color: #893168;
+    width: 500px;
+    height: 400px;
+    /* padding: 10px; */
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#amtinput{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    justify-items: left;
+    align-items: center;
+    padding: 1rem;
+    /* margin: 1rem; */
+}
+#amtinput input{
+    padding: 5px;
+    /* width: 8rem; */
+    margin-right: 15px;
+    margin-left: 11px;
+}
+.details{
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+.row{
+    /* margin: 1rem; */
+}
+.details .col{
+    display: flex;
+    flex-direction: column;
+}
+.details .col select{
+    padding: 5px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+#convertDisplay{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.2rem;
+    margin-bottom: 0.8rem;
+    /* margin: auto; */
+    padding: 10px;
+    background-color: #2e1c2b;
+    border-radius: 50px;
+    /* width: 75%; */
+
+}
+#convertDisplay h4{
+    text-align: center;
+    padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+}
+#convertDisplay i{
+    position: relative;
+    /* left: 15px; */
+    color: aqua;
+}
+#cnvrtbtn{
+    padding: 15px;
+    border: none;
+    background-color: #4a1942;
+    color: white;
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: 200ms;
+    transition-timing-function: linear;
+    position: relative;
+}
+#cnvrtbtn:hover{
+    transform: scale(1.1);
+}
+#btnfooter{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width : 800px) and (min-width:400px) {
+    .content{
+        width: 600px;
+        height: 800px;
+
+    }
+    .details .row{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .details .col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.2em;
+    }
+    .details .col select{
+        width: 15rem;
+        padding: 1rem;
+    }
+    .details img{
+        width: 6em;
+    }
+    
+    #amtinput h3{
+        font-size: 2em;
+    }
+    #convertDisplay h4{
+        font-size: 2.5em;
+    }
+    #cnvrtbtn{
+        padding: 1em;
+        font-size: 2em;
+    }
+
+}
+@media screen and (max-width:400px) {
+    .content{
+        height: 100%;
+    }
+    .container{
+        height: 100%;
+        width: 100%;
+    }
+}
